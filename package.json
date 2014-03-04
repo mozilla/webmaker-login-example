@@ -1,0 +1,24 @@
+{
+  "name": "webmaker-login-example",
+  "version": "0.0.0",
+  "license": "MPL-2.0",
+  "author": "Webmaker Product Team <webmaker-staff@mozillafoundation.org>",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mozilla/webmaker-login-example.git"
+  },
+  "dependencies": {
+    "bower": "1.2.8",
+    "express": "3.4.8",
+    "habitat": "1.1.0",
+    "helmet": "0.1.2",
+    "less-middleware": "0.1.15",
+    "nunjucks": "1.0.1",
+    "webmaker-auth": "0.0.12",
+    "webmaker-i18n": "https://github.com/mozilla/node-webmaker-i18n/archive/v0.3.11.tar.gz",
+    "webmaker-locale-mapping": "latest"
+  }
+}

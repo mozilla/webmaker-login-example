@@ -1,0 +1,6 @@
+{
+  "name": "webmaker-login-example",
+  "dependencies": {
+    "webmaker-auth-client": "0.0.21"
+  }
+}

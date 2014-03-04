@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Webmaker Login example page</title>
+  <link href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css" rel="stylesheet">
+  <!-- STEP 1: Get the css - including the create user form CSS -->
+  <link href="/css/login-example.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="welcome">Welcome, <span class="username"></span></h1>
+
+    <!-- STEP 2: Make some log-in and log-out buttons -->
+    <button class="btn btn-primary login">Login</button>
+    <button class="btn btn-warning logout">Logout</button>
+  </div>
+
+  <!-- STEP 3: use nunjucks to include the create-user-form HTML -->
+  {% include "/webmaker-auth-client/create-user/create-user-form.html" %}
+
+  <!-- STEP 4: Always include the Persona include file! -->
+  <script src="https://login.persona.org/include.js"></script>
+
+  <!-- STEP 5: If not using the minified version of webmaker-auth-client,
+        you must include EventEmitter.js -->
+  <script src="/bower/eventEmitter/EventEmitter.js"></script>
+
+  <!-- STEP 6: Load up webmaker-auth-client.js. You can also load webmaker-auth-client
+        with require-js -->
+  <script src="/bower/webmaker-auth-client/webmaker-auth-client.js"></script>
+
+  <!-- STEP 7: Load in the JS for setting up webmaker-auth actions and event listeners -->
+  <script src="/js/login-example.js"></script>
+</body>
+</html>
